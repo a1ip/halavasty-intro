@@ -38,31 +38,24 @@
     padding: 75px var(--slide-side) 0;
     width: var(--slide-width);
     height: var(--slide-height);
-    background-color: var(--color-blue);
+    background-color: var(--color-violet);
 }
 
-/* Number */
-
-.slide::before {
-    content: " ";
-    display: block;
+.slide::after{
     position: absolute;
-    bottom: 0;
-    z-index: 1;
-    right: 10px;
-    width: 140px;
-    height: 20px;
-    background-image: url(gurtam.svg);
-    padding: 10px 0;
-}
-
-.slide::after {
-    position: absolute;
-    bottom: -115px;
-    right: -132px;
-    content: " ";
-    width: 250px;
-    height: 275px;
-    background-color: #fff;
-    transform: rotate(40deg);
+    top: 0;
+    background: white;
+    height: 2em;
+    width: 5em;
+    line-height: 2.1em;
+    padding-top: 0;
+    margin-top: 15px;
+    left: 980px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 0.5em;
+    color: black;
+    counter-increment: slide;
+    content: counter(slide);
+    box-sizing: border-box;
 }
